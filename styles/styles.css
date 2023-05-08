@@ -1,0 +1,155 @@
+/* Estilos globales */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+  }
+  p{
+    text-decoration:underline;
+  }
+  
+  /* Header */
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  nav ul li {
+    margin: 0 10px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  /* Sección de productos */
+  .products {
+    margin: 20px;
+  }
+  
+  .products h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+  
+  .products ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content:space-evenly;
+    flex-wrap: nowrap;
+  }
+  
+  .products li {
+    flex-basis: calc(33.33% - 20px);
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+  }
+  
+  .products li img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  .products li h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .products li p {
+    margin-bottom: 10px;
+    text-decoration: none;
+  }
+  
+  .products li .price {
+    font-size: 20px;
+    font-weight: bold;
+    color: #c00;
+    margin-bottom: 10px;
+  }
+  
+  .products li button {
+    background-color: #c00;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .products li button:hover {
+    background-color: #900;
+  }
+  
+  /* Carrito */
+  .cart {
+    margin: 20px;
+  }
+  
+  .cart h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+  
+  .cart ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .cart li {
+    margin-bottom: 10px;
+  }
+  
+  .cart p {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .cart button {
+    background-color: #c00;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .cart button:hover {
+    background-color: #900;
+  }
+  
+  /* Pie de página */
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  footer p {
+    margin: 0;
+  }
+
+  /* media queries */
+@media screen and (max-width: 480px) {
+    .products ul {
+        flex-wrap: wrap;
+    }
+}
